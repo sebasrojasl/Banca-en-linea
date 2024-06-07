@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/BancaEnLinea/.vs
+/BancaEnLinea/bin/Debug/net8.0
+/BancaEnLinea/obj
+/BancaEnLinea/Views/Cuenta
