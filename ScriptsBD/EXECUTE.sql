@@ -1,0 +1,40 @@
+USE [BancaEnLinea]
+GO
+
+DECLARE @RC int
+DECLARE @ID_CLIENTE int = 1
+
+-- TODO: Set parameter values here.
+
+EXECUTE @RC = [dbo].[OBTENER_CLIENTE] 
+   @ID_CLIENTE
+GO
+
+
+USE [BancaEnLinea]
+GO
+
+DECLARE @RC int
+DECLARE @CUENTA VARCHAR(100) = '444444444'
+
+-- TODO: Set parameter values here.
+
+EXECUTE @RC = [dbo].[OBTENER_SALDO] 
+   @CUENTA 
+GO
+
+USE [BancaEnLinea]
+GO
+
+DECLARE @RC int
+DECLARE @CUENTA VARCHAR(100) = '444444444'
+DECLARE @SALDO_ACTUALIZADO VARCHAR(100) = '1000'
+
+-- TODO: Set parameter values here.
+
+EXECUTE @RC = [dbo].[ACTUALIZAR_FONDOS] 
+   @CUENTA ,
+   @SALDO_ACTUALIZADO
+GO
+
+
